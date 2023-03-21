@@ -1,12 +1,15 @@
 $green: #083118;
 $white: #fff;
 $gray: #9E9E9E;
-$pink: #e3bec1;
+// $pink: #e3bec1;
+$pink: #c9a1a4;
+
 
 body{
   background: $green;
   color: $white;
-  font-family:"open sans", Arial,serif;
+  font-family:"open sans", Arial, serif;
+  counter-reset: inc -5;
   .container{
     text-align: center;
     margin-top:40px;
@@ -18,7 +21,6 @@ body{
     .field{
       outline:none;
       background-color:transparent;
-      // font-family:"open sans", Arial,serif;
       font-weight:100;
       letter-spacing: 10px;
       border-radius:8px;

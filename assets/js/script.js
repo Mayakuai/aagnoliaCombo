@@ -107,6 +107,8 @@ $(document).ready(function() {
   }
 
   //Check the Answer
+  document.querySelector("div").classList.add("animated")
+  var animation="bounce"
   var check = document.getElementById("check");
   check.addEventListener("click", function(){
     if(document.querySelector("input").value=="681"){
