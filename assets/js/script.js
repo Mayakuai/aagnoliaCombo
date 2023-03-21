@@ -113,8 +113,9 @@ $(document).ready(function() {
       document.querySelector("h2").innerHTML = "Correct";
       document.querySelector("div").classList.add("correct");
     }else{
-      document.querySelector("h2").innerHTML = "Incorrect";
+      document.querySelector("h2").innerHTML = "Incorrect. Try Again!";
       document.getElementById("field").value = "";
+      counter=0;
       if(animation=="bounce"){
         document.querySelector("div").classList.remove("shake");
         document.querySelector("div").classList.add("bounce");
@@ -124,7 +125,6 @@ $(document).ready(function() {
         document.querySelector("div").classList.add("shake");
         animation="bounce";
       }
-      counter=0;
     }
     console.log("Checking");
   });
