@@ -1,4 +1,104 @@
+$green: #004021;
+$white: #fff;
+$gray: #9E9E9E;
+$pink: #e3bec1;
+
 body{
-  background: #004021;
-  color: #fff;
+  background: rgb(14,60,36);
+  background: linear-gradient(167deg, rgba(14,60,36,1) 0%, rgba(8,60,32,1) 50%, rgba(2,59,28,1) 100%);
+  color: $white;
+  font-family:"open sans", Arial,serif;
+  .container{
+    text-align: center;
+    margin-top:40px;
+    .field{
+      outline:none;
+      background-color:transparent;
+      // font-family:"open sans", Arial,serif;
+      font-weight:100;
+      letter-spacing: 10px;
+      border-radius:8px;
+      width:220px;
+      font-size:1.1em;
+      border:1px solid $pink;
+      height:45px;
+      color:$pink;
+      text-align:center;
+      margin-top:-15px;
+      position:absolute;
+      margin-top:15px;
+      margin-left:30px;
+      display:inline-block;
+    }
+    .number{
+      width:40px;
+      height:40px;
+      padding:10px;
+      font-size:1.3em;
+      font-weight:200;
+      color:$pink;
+      border-radius:100%;
+      border:1px solid $pink;
+      text-align:center;
+      line-height:43px;
+      display:inline-block;
+      margin:10px;
+      cursor:pointer;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      transition:0.4s;
+      &:hover{
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+      &:active{
+        box-shadow: none;
+      }
+    }
+    .button{
+      width:40px;
+      height:40px;
+      padding:10px;
+      // font-size:1.3em;
+      font-size: 0.9em;
+      font-weight:200;
+      color:$white;
+      border-radius:100%;
+      border:1px solid $white;
+      text-align:center;
+      line-height:43px;
+      display:inline-block;
+      margin:10px;
+      cursor:pointer;
+    }
+    #check{
+      display:inline-block;
+      background:$green;
+      border: 1px solid #fff;
+      color:$gray;
+      transition:0.4s;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      &:hover{
+        color:$white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+      &:active{
+        box-shadow:none;
+      }
+    }
+    #reset{
+      display:inline-block;
+      margin-left:300px;
+      background:$green;
+      border: 1px solid #fff;
+      color:$gray;
+      transition:0.4s;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+      &:hover{
+        color:$white;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+      }
+      &:active{
+        box-shadow:none;
+      }
+    }
+  }
 }
