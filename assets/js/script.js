@@ -1,4 +1,4 @@
-///Answer is 123
+///Answer is 681
 
 $(document).ready(function() {
   for(var count =1; count<11;count++){
@@ -109,7 +109,7 @@ $(document).ready(function() {
   //Check the Answer
   var check = document.getElementById("check");
   check.addEventListener("click", function(){
-    if(document.querySelector("input").value=="123"){
+    if(document.querySelector("input").value=="681"){
       document.querySelector("h2").innerHTML = "Correct";
       document.querySelector("div").classList.add("correct");
     }else{

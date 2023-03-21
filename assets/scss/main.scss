@@ -1,16 +1,20 @@
-$green: #004021;
+$green: #083118;
 $white: #fff;
 $gray: #9E9E9E;
 $pink: #e3bec1;
 
 body{
-  background: rgb(14,60,36);
-  background: linear-gradient(167deg, rgba(14,60,36,1) 0%, rgba(8,60,32,1) 50%, rgba(2,59,28,1) 100%);
+  background: $green;
   color: $white;
   font-family:"open sans", Arial,serif;
   .container{
     text-align: center;
     margin-top:40px;
+    margin: 0 auto;
+    img{
+      width: 20%;
+      height: auto;
+    }
     .field{
       outline:none;
       background-color:transparent;
@@ -47,6 +51,8 @@ body{
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       transition:0.4s;
       &:hover{
+        background: $pink;
+        color: $white;
         box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
       }
       &:active{
@@ -60,7 +66,7 @@ body{
       // font-size:1.3em;
       font-size: 0.9em;
       font-weight:200;
-      color:$white;
+      color:$green;
       border-radius:100%;
       border:1px solid $white;
       text-align:center;
@@ -71,9 +77,9 @@ body{
     }
     #check{
       display:inline-block;
-      background:$green;
+      background:$pink;
       border: 1px solid #fff;
-      color:$gray;
+      // color:$white;
       transition:0.4s;
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       &:hover{
@@ -87,9 +93,9 @@ body{
     #reset{
       display:inline-block;
       margin-left:300px;
-      background:$green;
+      background:$pink;
       border: 1px solid #fff;
-      color:$gray;
+      // color:$green;
       transition:0.4s;
       box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
       &:hover{
