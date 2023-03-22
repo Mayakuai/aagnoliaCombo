@@ -29,6 +29,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "1";
         counter= counter+1;
+        nums[0].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -37,6 +38,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "2";
         counter= counter+1;
+        nums[1].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -45,6 +47,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "3";
         counter= counter+1;
+        nums[2].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -53,6 +56,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "4";
         counter= counter+1;
+        nums[3].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -61,6 +65,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "5";
         counter= counter+1;
+        nums[4].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -69,6 +74,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "6";
         counter= counter+1;
+        nums[5].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -77,6 +83,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "7";
         counter= counter+1;
+        nums[6].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -85,6 +92,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "8";
         counter= counter+1;
+        nums[7].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -93,6 +101,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "9";
         counter= counter+1;
+        nums[8].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -101,6 +110,7 @@ $(document).ready(function() {
       if(counter<3){
         document.querySelector("input").value = document.querySelector("input").value + "0";
         counter= counter+1;
+        nums[9].classList.add("touched");
         console.log(document.querySelector("input").value);
       }
     };
@@ -112,11 +122,21 @@ $(document).ready(function() {
   var check = document.getElementById("check");
   check.addEventListener("click", function(){
     if(document.querySelector("input").value=="681"){
-      document.querySelector("h2").innerHTML = "Correct";
+      document.querySelector("prompt").innerHTML = "Correct <span class='confetti'>🎉<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>";
       document.querySelector("div").classList.add("correct");
     }else{
       document.querySelector("h2").innerHTML = "Incorrect. Try Again!";
       document.getElementById("field").value = "";
+      nums[0].classList.remove("touched");
+      nums[1].classList.remove("touched");
+      nums[2].classList.remove("touched");
+      nums[3].classList.remove("touched");
+      nums[4].classList.remove("touched");
+      nums[5].classList.remove("touched");
+      nums[6].classList.remove("touched");
+      nums[7].classList.remove("touched");
+      nums[8].classList.remove("touched");
+      nums[9].classList.remove("touched");
       counter=0;
       if(animation=="bounce"){
         document.querySelector("div").classList.remove("shake");
@@ -133,9 +153,21 @@ $(document).ready(function() {
 
   //Reset Pin
   var reset = document.getElementById("reset");
+  var touched =
   reset.addEventListener("click", function(){
+    // var number = getElementsByClassName("number");
     document.getElementById("field").value = "";
     document.querySelector("h2").innerHTML = "Enter The Code";
+    nums[0].classList.remove("touched");
+    nums[1].classList.remove("touched");
+    nums[2].classList.remove("touched");
+    nums[3].classList.remove("touched");
+    nums[4].classList.remove("touched");
+    nums[5].classList.remove("touched");
+    nums[6].classList.remove("touched");
+    nums[7].classList.remove("touched");
+    nums[8].classList.remove("touched");
+    nums[9].classList.remove("touched");
     counter=0;
     console.log("Reset");
   });
