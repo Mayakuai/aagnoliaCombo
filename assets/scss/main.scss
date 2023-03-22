@@ -22,13 +22,6 @@ $pink: #c9a1a4;
 ::-moz-selection { background: $lightGreen; color: #FFFFFF; text-shadow: none; }
 ::selection { background: $lightGreen; color: #FFFFFF; text-shadow: none; }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-}
-
 html {
   scroll-behavior: smooth;
 }
