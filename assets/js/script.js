@@ -122,7 +122,7 @@ $(document).ready(function() {
   var check = document.getElementById("check");
   check.addEventListener("click", function(){
     if(document.querySelector("input").value=="681"){
-      document.querySelector("prompt").innerHTML = "Correct <span class='confetti'>🎉<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>";
+      document.querySelector(".prompt").innerHTML = "Correct <span class='confetti'>🎉<i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>";
       document.querySelector("div").classList.add("correct");
     }else{
       document.querySelector("h2").innerHTML = "Incorrect. Try Again!";
@@ -157,7 +157,7 @@ $(document).ready(function() {
   reset.addEventListener("click", function(){
     // var number = getElementsByClassName("number");
     document.getElementById("field").value = "";
-    document.querySelector("h2").innerHTML = "Enter The Code";
+    document.querySelector(".intro").innerHTML = "Enter The Code";
     nums[0].classList.remove("touched");
     nums[1].classList.remove("touched");
     nums[2].classList.remove("touched");
